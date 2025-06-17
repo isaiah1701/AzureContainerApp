@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevOps Demo App</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            color: white;
+        }
+        .container {
+            background: rgba(255,255,255,0.1);
+            padding: 30px;
+            border-radius: 10px;
+            backdrop-filter: blur(10px);
+        }
+        .status-card {
+            background: rgba(255,255,255,0.2);
+            padding: 20px;
+            border-radius: 8px;
+            margin: 20px 0;
+        }
+        button {
+            background: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        button:hover {
+            background: #45a049;
+        }
+        #status-info {
+            margin-top: 15px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🚀 DevOps Demo Application</h1>
+        <p>Simple containerized Flask app for learning Docker and Azure Container Registry.</p>
+        
+        <div class="status-card">
+            <h3>Application Status</h3>
+            <button onclick="checkStatus()">Check API Status</button>
+            <div id="status-info"></div>
+        </div>
+
+        <div class="status-card">
+            <h3>DevOps Learning Goals</h3>
+            <ul>
+                <li>✅ Create simple web application</li>
+                <li>✅ Dockerize the application</li>
+                <li>⏳ Push to Azure Container Registry</li>
+                <li>⏳ Deploy to Azure Container App</li>
+            </ul>
+        </div>
+    </div>
+
+    <script>
+        async function checkStatus() {
+            try {
+                const response = await fetch('/api/status');
+                const data = await response.json();
+                document.getElementById('status-info').innerHTML = `
+                    <p><strong>Status:</strong> ${data.status}</p>
+                    <p><strong>Version:</strong> ${data.version}</p>
+                    <p><strong>Environment:</strong> ${data.environment}</p>
+                    <p><strong>Timestamp:</strong> ${data.timestamp}</p>
+                `;
+            } catch (error) {
+                document.getElementById('status-info').innerHTML = `
+                    <p style="color: #ff6b6b;"><strong>Error:</strong> ${error.message}</p>
+                `;
+            }
+        }
+    </script>
+</body>
+</html>
