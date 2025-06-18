@@ -52,7 +52,7 @@ The application features a clean, modern interface with:
 - Responsive design with gradient background
 
 ### API Status Check
-![API Status](./visuals/visuals/azureappTimestamp.png)
+![API Status](./visuals/azureappTimestamp.png)
 
 Click "Check API Status" to see:
 - Application health status
