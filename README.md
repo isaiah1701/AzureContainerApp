@@ -15,7 +15,7 @@ This project showcases a complete DevOps pipeline from development to production
 
 ## 🏗️ Architecture
 
-![Architecture Diagram](./visuals/architecture-diagram.png)
+![Architecture Diagram](./visuals/azureappDiagram.png)
 
 The application follows a modern containerized architecture:
 1. **Repository** - Source code stored in Git
@@ -43,7 +43,7 @@ The application follows a modern containerized architecture:
 ## 🖥️ Application Screenshots
 
 ### Home Screen
-![Home Screen](./visuals/home-screen.png)
+![Home Screen](./visuals/azureappHomeScreen.png)
 
 The application features a clean, modern interface with:
 - Welcome message and project description
@@ -52,7 +52,7 @@ The application features a clean, modern interface with:
 - Responsive design with gradient background
 
 ### API Status Check
-![API Status](./visuals/api-status.png)
+![API Status](./visuals/visuals/azureappTimestamp.png)
 
 Click "Check API Status" to see:
 - Application health status
@@ -61,7 +61,7 @@ Click "Check API Status" to see:
 - Real-time timestamp
 
 ### HTTPS Security
-![HTTPS Security](./visuals/https-security.png)
+![HTTPS Security](./visuals/azureappHttps.png)
 
 The application is secured with:
 - Valid SSL/TLS certificate
