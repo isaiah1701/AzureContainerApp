@@ -43,7 +43,7 @@ The application follows a modern containerized architecture:
 ## 🖥️ Application Screenshots
 
 ### Home Screen
-![Home Screen](./visuals/azureappHomeScreen.png)
+![Home Screen](./visuals/azureAppHomeScreen.png)
 
 The application features a clean, modern interface with:
 - Welcome message and project description
@@ -61,7 +61,7 @@ Click "Check API Status" to see:
 - Real-time timestamp
 
 ### HTTPS Security
-![HTTPS Security](./visuals/azureappHttps.png)
+![HTTPS Security](./visuals/azureAppHttps.png)
 
 The application is secured with:
 - Valid SSL/TLS certificate
