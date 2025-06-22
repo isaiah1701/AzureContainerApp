@@ -34,3 +34,4 @@ variable "custom_domain" {
 variable "container_app_url" {
   default = "devops-demo-app--qqzrtaq.salmonocean-cb66bb50.westeurope.azurecontainerapps.io"
 }
+##customisable variables

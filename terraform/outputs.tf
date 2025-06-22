@@ -4,3 +4,4 @@ output "container_app_url" {
 output "application_gateway_ip" {
   value = azurerm_public_ip.appgw_ip.ip_address
 }
+##out put values 
